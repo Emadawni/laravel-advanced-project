@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\TestController;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -16,3 +18,6 @@ Route::get('/insert', function () {
 
     return "تمت إضافة البيانات بنجاح إلى قاعدة البيانات باستخدام Query Builder!" ;
 });
+
+Route::get('/test-view', [TestController::class, 'index']);
+
