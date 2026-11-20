@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CAAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f49da8a5d21d996e8bb91475a250d36837b5941")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47a720972639433160ca485d897da71363716386")]
 [assembly: System.Reflection.AssemblyProductAttribute("CAAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CAAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

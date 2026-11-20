@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Edit User</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body style="font-family: Arial; padding: 20px;">
-
-    <h2>Edit User: {{ $user->name }}</h2>
-    
-    <form action="{{ route('users.update', $user->id) }}" method="POST">
+<body class="p-4">
+<div class="container">
+    <h2>Edit User</h2>
+    <form action="{{ route('users.update', $user->id) }}" method="POST" class="mt-3">
         @csrf
         @method('PUT')
-        
-        <div style="margin-bottom: 15px;">
-            <label>Name:</label><br>
-            <input type="text" name="name" value="{{ $user->name }}" required>
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" value="{{ $user->name }}" required>
         </div>
-        
-        <div style="margin-bottom: 15px;">
-            <label>Email:</label><br>
-            <input type="email" name="email" value="{{ $user->email }}" required>
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" value="{{ $user->email }}" required>
         </div>
-        
-        <button type="submit">Save Changes</button>
-        <a href="{{ route('users.index') }}">Cancel</a>
+        <button type="submit" class="btn btn-primary">Update</button>
+        <a href="{{ route('users.index') }}" class="btn btn-secondary">Back</a>
     </form>
-
+</div>
 </body>
 </html>
